@@ -169,10 +169,62 @@ img {
 }
 
 /*=============== HEADER & NAV ===============*/
+.header {
+  position: fixed; /* Keep in the same place even when scrolling */
+  width: 100%; /* Set width of header to width of viewport */
+  top: 0; /* Set top edge of header to top of screen */
+  left: 0; /* Set left edge of header to left side of screen */
+  background-color: var(--body-color); /* Set background color to body-color variable */
+  z-index: var(--z-fixed); /* Keeps header above everything else */
+  transition: box-shadow .4s; /* Set animation to header */
+}
 
+.nav {
+  position: relative;
+  height: var(--header-height);
+  display: flex; /* Enable flexbox */
+  justify-content: space-between; /* Add even spacing between elements */
+  align-items: center; /* Vertically align items to the center */
+}
+
+.nav__logo {
+  display: flex; /* Enable flexbox */
+  column-gap: .5rem; /* Add gap between logo and name */
+  align-items: center; /* Center the items vertically */
+  font-weight: var(--font-semi-bold); /* Make font bold */
+  color: var(--title-color); /* Give title color black color */
+}
+
+.nav__logo-circle,
+.nav__toggle {
+  width: 32px;
+  height: 32px;
+  background-color: var(--black-color);
+  color: var(--white-color);
+  display: grid; /* Allows use of place-items */
+  place-items: center; /* Center the icons of buttons */
+}
+
+.nav__logo-circle {
+  border-radius: 50%; /* Make icon circular */
+}
+
+.nav__toggle {
+  font-size: 1.25rem; /* Make hamburger menu icon larger */
+  cursor: pointer;
+}
 
 /* Navigation for mobile devices */
-
+@media screen and (max-width: 1150px) {
+  .nav__menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: hsla(0, 0%, 0%, .75);
+    width: 100%;
+    text-align: center;
+  }
+}
 
 /* Show menu */
 
