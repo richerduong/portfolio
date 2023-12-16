@@ -215,7 +215,7 @@ img {
 }
 
 /* Navigation for mobile devices */
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1150px) { /* Only style when the screen width */
   .nav__menu {
     position: fixed;
     top: 0;
@@ -263,6 +263,12 @@ img {
 .nav__name::before {
   left: initial;
   right: -4rem;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.5rem;
 }
 
 /* Show menu */
