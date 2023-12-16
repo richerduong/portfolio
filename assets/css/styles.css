@@ -220,7 +220,7 @@ img {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: hsla(0, 0%, 0%, .75);
+    background-color: hsla(0, 0%, 0%, .75); /* Hue-Saturation-Lightness-Alpha */
     width: 100%;
     padding-block: 1.8rem 5rem;
     text-align: center;
@@ -269,6 +269,14 @@ img {
   display: flex;
   flex-direction: column;
   row-gap: 2.5rem;
+}
+
+.nav__link {
+  position: relative;
+  color: var(--text-color-light);
+  font-size: var(--h3-font-size);
+  font-weight: var(--font-semi-bold);
+  transition: color .3s;
 }
 
 /* Show menu */
