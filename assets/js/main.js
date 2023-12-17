@@ -27,3 +27,11 @@ const linkAction = () => {
     navMenu.classList.remove('show-menu') // This hides the navigation menu
 }
 navLink.forEach(n => n.addEventListener('click', linkAction)) // Loop over each element in navLink NodeList, then the linkAction will be called on click events
+
+/* Shadow Header */
+const shadowHeader = () => {
+    const header = document.getElementById('header')
+    this.scrollY >= 50 ? header.classList.add('shadow-header')
+                       : header.classList.remove('shadow-header')
+}
+window.addEventListener('scroll', shadowHeader)
