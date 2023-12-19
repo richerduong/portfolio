@@ -467,7 +467,20 @@ img {
 
 
 /*=============== ABOUT ===============*/
+.about {
+  background-color: var(--container-color);
+  transition: background-color .4s;
+}
 
+.about__container {
+  row-gap: 0;
+}
+
+.about__profile {
+  position: relative;
+  justify-self: center;
+  margin-block: 2.5rem 4.5rem;
+}
 
 /*=============== SERVICES ===============*/
 
