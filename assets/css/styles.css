@@ -1,30 +1,30 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(14, 98%, 50%);
+  --first-color: #147EFB;
   --black-color: hsl(0, 0%, 0%);
   --black-color-light: hsl(0, 0%, 40%);
-  --white-color: hsl(0, 0%, 95%);
-  --title-color: hsl(0, 0%, 0%);
+  --white-color: #FFFFFF;
+  --title-color: #2D2E32;
   --text-color: hsl(0, 0%, 35%);
   --text-color-light: hsl(0, 0%, 64%);
-  --body-color: hsl(0, 0%, 87%);
+  --body-color: #F9F9F9;
   --container-color: hsl(0, 0%, 83%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: "Bai Jamjuree", sans-serif;
+  --body-font: "Poppins", sans-serif;
   --biggest-font-size: 2.5rem;
   --h1-font-size: 1.75rem;
   --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
+  --h3-font-size: 17px;
+  --normal-font-size: 17px;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
 
@@ -46,7 +46,7 @@
     --h1-font-size: 3rem;
     --h2-font-size: 1.5rem;
     --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
+    --normal-font-size: 1.0625rem;
     --small-font-size: .875rem;
     --smaller-font-size: .813rem;
   }
@@ -106,7 +106,7 @@ img {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-  --first-color: hsl(14, 80%, 50%);
+  --first-color: #147EFB;
   --black-color: hsl(0, 0%, 18%);
   --black-color-light: hsl(0, 0%, 30%);
   --title-color: hsl(0, 0%, 95%);
@@ -235,7 +235,7 @@ body.dark-theme {
   width: 100%; /* Set width of header to width of viewport */
   top: 0; /* Set top edge of header to top of screen */
   left: 0; /* Set left edge of header to left side of screen */
-  background-color: var(--body-color); /* Set background color to body-color variable */
+  background-color: var(--white-color); /* Set background color to body-color variable */
   z-index: var(--z-fixed); /* Keeps header above everything else */
   transition: box-shadow .4s, background-color .4s; /* Set animation to header */
 }
@@ -252,7 +252,7 @@ body.dark-theme {
   display: flex; /* Enable flexbox */
   column-gap: .5rem; /* Add gap between logo and name */
   align-items: center; /* Center the items vertically */
-  font-weight: var(--font-semi-bold); /* Make font bold */
+  font-weight: var(--font-bold); /* Make font bold */
   color: var(--title-color); /* Give title color black color */
 }
 
@@ -357,6 +357,7 @@ body.dark-theme {
 
 .nav__link:hover::after {
   width: 25%;
+  background-color: var(--first-color);
 }
 
 .nav__close {
@@ -374,7 +375,7 @@ body.dark-theme {
 
 /* Add shadow header */
 .shadow-header {
-  box-shadow: 0 1px 16px hsla(0, 0%, 0%, .12);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 }
 
 /* Active link */
@@ -782,7 +783,7 @@ body.dark-theme {
 }
 
 .footer__link {
-  coloter: var(--white-color);
+  color: var(--white-color);
   transition: color .4s;
 }
 
@@ -904,12 +905,12 @@ body.dark-theme {
   }
 
   .nav__link {
-    color: var(--text-color);
+    color: #2D2E32;
     font-size: var(--normal-font-size);
   }
 
   .nav__link:hover {
-    color: var(--title-color);
+    color: var(--first-color);
   }
 
   .nav__link::after {
@@ -927,11 +928,11 @@ body.dark-theme {
   } */
 
   .change-theme {
-    color: var(--text-color);
+    color: var(--title-color);
   }
 
   .change-theme:hover {
-    color: var(--title-color);
+    color: var(--first-color);
   }
 
   .home__container {
