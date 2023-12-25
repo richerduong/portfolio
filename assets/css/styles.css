@@ -119,7 +119,7 @@ body.dark-theme {
 	Color changes in some parts of 
 	the website, in dark theme
 ==========*/
-.dark-theme .shadow-header {
+.dark-theme .header {
   box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6);
 }
 
@@ -238,6 +238,7 @@ body.dark-theme {
   background-color: var(--white-color); /* Set background color to body-color variable */
   z-index: var(--z-fixed); /* Keeps header above everything else */
   transition: box-shadow .4s, background-color .4s; /* Set animation to header */
+  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
 }
 
 .nav {
@@ -373,11 +374,6 @@ body.dark-theme {
   top: 0;
 }
 
-/* Add shadow header */
-.shadow-header {
-  box-shadow: 0 0 10px rgba(0, 0, 0, .09);
-}
-
 /* Active link */
 .active-link {
   color: var(--white-color);
@@ -391,12 +387,60 @@ body.dark-theme {
 
 .home {
   background-color: #F9F9F9;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  position: relative;
+  width: 100%;
 }
 
-/* .home__container {
-  padding-top: 2rem;
+ .home__container {
+  margin: 0 auto;
+  max-width: 107rem;
+  padding: 0 4rem;
 }
 
+.home__profile {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  height: 65rem;
+  justify-content: center;
+  position: relative;
+}
+
+.home__main {
+  align-items: center;
+  display: flex;
+  gap: 10rem;
+  justify-content: center;
+  position: relative;
+}
+
+.home__text {
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
+  position: relative;
+}
+
+.home__text h1 {
+  color: #2D2E32;
+  font-size: 5.5rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.home__text img {
+  height: 6rem;
+  position: absolute;
+  right: 13rem;
+  top: 8.7rem;
+  width: 6rem;
+}
+
+/*
 .home__name {
   font-size: var(--biggest-font-size);
   text-align: center;
@@ -404,11 +448,6 @@ body.dark-theme {
 
 .home__text img {
   height: 6rem;
-}
-
-.home__profile {
-  position: relative;
-  justify-self: center;
 }
 
 .home__image {
