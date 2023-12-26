@@ -161,13 +161,3 @@ nav ul a:hover {
     display: none;
   }
 }
-
-.project {
-  background-color: #f9f9f9;
-  padding: 15rem 0;
-}
-@media (max-width: 1020px) {
-  .project {
-    padding: 8rem 0;
-  }
-}

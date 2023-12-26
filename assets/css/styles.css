@@ -931,6 +931,16 @@ body.dark-theme {
   margin-left: 0.2rem;
 }
 
+.project {
+  background-color: #f9f9f9;
+  padding: 15rem 0;
+}
+@media (max-width: 1020px) {
+  .project {
+    padding: 8rem 0;
+  }
+}
+
 /* CONTACT */
 .contact {
   background-color: white;
@@ -1079,4 +1089,57 @@ footer h3 {
 /* Show Scroll Up */
 .show-scroll {
   bottom: 3rem;
+}
+
+/* BREAKPOINTS */
+@media screen and (min-width: 1150px) {
+  .nav {
+    height: calc(var(--header-height) + 2rem);
+    column-gap: 4rem;
+  }
+
+  .nav__close,
+  .nav__toggle,
+  .nav__title,
+  .nav__name {
+    display: none;
+  }
+
+  .nav__list {
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .nav__menu {
+    margin-left: auto;
+  }
+
+  .nav__link {
+    color: #2D2E32;
+    font-size: var(--normal-font-size);
+  }
+
+  .nav__link:hover {
+    color: var(--first-color);
+  }
+
+  .nav__link::after {
+    background-color: var(--title-color);
+  }
+
+  .active-link {
+    color: var(--title-color);
+  }
+
+  .change-theme {
+    color: var(--title-color);
+  }
+
+  .change-theme:hover {
+    color: var(--first-color);
+  }
+
+  .scrollup {
+    right: 3rem;
+  }
 }
