@@ -1,58 +1,5 @@
-/*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
-
-/*=============== BASE ===============*/
-
 body {
   font-size: var(--normal-font-size);
-}
-
-/*========== Variables Dark theme ==========*/
-/*========== 
-	Color changes in some parts of 
-	the website, in dark theme
-==========*/
-.dark-theme .header {
-  box-shadow: 0 1px 12px hsla(0, 0%, 0%, .6);
-}
-
-.dark-theme .section__title-1::after,
-.dark-theme .section__title-2::after {
-  background-color: hsla(14, 70%, 50%, .2);
-}
-
-.dark-theme :is(.home__arrow, .home__line, .about__line) {
-  filter: none;
-}
-
-.dark-theme .home__description b {
-  background: linear-gradient(90deg,
-              hsla(14, 80%, 50%, .3),
-              hsla(14, 80%, 50%, 0));
-}
-
-.dark-theme :is(.button__ghost) {
-  color: var(--white-color);
-}
-
-.dark-theme .projects__card:hover {
-  background-color: var(--container-color);
-}
-
-.dark-theme .footer {
-  background-color: hsl(0, 0%, 4%);
-}
-
-.dark-theme::-webkit-scrollbar {
-  background-color: hsl(0, 0%, 20%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(0, 0%, 30%);
-}
-
-.dark-theme::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 40%);
 }
 
 /*=============== REUSABLE CSS CLASSES ===============*/
@@ -62,135 +9,7 @@ body {
 }
 
 /*=============== HOME ===============*/
-
-.home {
-  background-color: #F9F9F9;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  position: relative;
-  width: 100%;
-}
-
- .home__container {
-  margin: 0 auto;
-  max-width: 107rem;
-  padding: 0 4rem;
-}
-
-.home__profile {
-  align-items: center;
-  display: flex;
-  gap: 10rem;
-  height: 65rem;
-  justify-content: center;
-  position: relative;
-}
-
-.home__main {
-  align-items: center;
-  display: flex;
-  gap: 10rem;
-  justify-content: center;
-  position: relative;
-}
-
-.home__text {
-  display: flex;
-  flex-direction: column;
-  max-width: 50rem;
-  position: relative;
-}
-
-.home__text h1 {
-  color: #2D2E32;
-  font-size: 5.5rem;
-  line-height: 1.2;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.home__text img {
-  height: 6rem;
-  position: absolute;
-  right: 13rem;
-  top: 8.7rem;
-  width: 6rem;
-}
-
-
-.home__name {
-  font-size: var(--biggest-font-size);
-  text-align: center;
-}
-
-.home__text img {
-  height: 6rem;
-}
-
-.home__image {
-  width: 220px;
-}
-
-.home__img {
-  position: relative;
-  z-index: 10;
-}
-
-.home__shadow {
-  width: 100%;
-  height: 100%;
-  background-color: var(--container-color);
-  position: absolute;
-  bottom: -.75rem;
-  right: -.75rem;
-  border: 4px solid var(--black-color);
-  z-index: 5;
-  transition: background-color .4s;
-}
-
- .home__social {
-  height: max-content;
-  position: absolute;
-  left: -3rem;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  display: grid;
-  row-gap: 1rem;
-}
-
-.home__social-link {
-  background-color: var(--black-color-light);
-  color: var(--white-color);
-  font-size: 1.25rem;
-  padding: 6px;
-  display: grid;
-  place-items: center;
-  transition: background-color .3s;
-} 
-
-.home__social-link:hover {
-  background-color: var(--black-color);
-}
-
-.home__info {
-  margin-top: 4rem;
-}
-
-.home__description {
-  text-align: center;
-  color: var(--title-color);
-  margin-bottom: 1.5rem;
-}
-
-.home__description b {
-  background: linear-gradient(90deg,
-              hsla(14, 98%, 50%, .3),
-              hsla(14, 98%, 50%, 0));
-}
-
-.home__scroll {
+/* .home__scroll {
   display: block;
   width: max-content;
   margin: 0 auto;
@@ -215,10 +34,10 @@ body {
 
 .home__scroll-box i {
   animation: scroll-down 3s infinite;
-}
+} */
 
 /* Animate scroll icon */
-@keyframes scroll-down {
+/* @keyframes scroll-down {
   0% {
     transform: translateY(-1rem);
     opacity: 0;
@@ -231,10 +50,10 @@ body {
     transform: translateY(.6rem);
     opacity: 0;
   }
-}
+} */
 
 /*=============== BUTTON ===============*/
-.button,
+/* .button,
 .button__ghost {
   display: flex;
   align-items: center;
@@ -271,10 +90,10 @@ body {
 
 .button__ghost:hover {
   border: 3px solid var(--first-color);
-}
+} */
 
 /*=============== ABOUT ===============*/
-.about {
+/* .about {
   background-color: var(--container-color);
   transition: background-color .4s;
 }
@@ -367,7 +186,7 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 1rem;
-}
+} */
 
 /*=============== SERVICES Where I've worked ===============*/
 
@@ -378,7 +197,7 @@ body {
   transition: background-color .4s;
 } */
 
-.projects__container {
+/* .projects__container {
   row-gap: 2rem;
 }
 
@@ -457,76 +276,19 @@ body {
 
 .projects__card:hover {
   background-color: var(--white-color);
-}
+} */
 
 /*=============== CONTACT ===============*/
 
 
-/* Opaque placeholder */
-
-
-/* Move label up & sticky label */
-
-
 /*=============== FOOTER ===============*/
-.footer {
-  background-color: var(--black-color);
-}
 
-.footer__container {
-  padding-block: 3rem 2rem;
-  row-gap: 2.5rem;
-}
-
-.footer__links {
-  display: flex;
-  justify-content: center;
-  column-gap: 2rem;
-}
-
-.footer__link {
-  color: var(--white-color);
-  transition: color .4s;
-}
 
 /*=============== SCROLL BAR ===============*/
-::-webkit-scrollbar {
-  width: .6rem;
-  border-radius: .5rem;
-  background-color: hsl(0, 0%, 65%);
-}
 
-::-webkit-scrollbar-thumb {
-  border-radius: .5rem;
-  background-color: hsl(0, 0%, 55%);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(0, 0%, 45%);
-}
 
 /*=============== SCROLL UP ===============*/
-.scrollup {
-  position: fixed;
-  right: 1rem;
-  bottom: -50%;
-  background-color: var(--black-color);
-  display: inline-flex;
-  padding: 8px;
-  font-size: 1.25rem;
-  color: var(--white-color);
-  z-index: var(--z-tooltip);
-  transition: bottom .4s, transform .4s, background-color .4s;
-}
 
-.scrollup:hover {
-  transform: translateY(-.5rem);
-}
-
-/* Show Scroll Up */
-.show-scroll {
-  bottom: 3rem;
-}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
