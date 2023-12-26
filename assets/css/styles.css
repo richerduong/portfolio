@@ -58,7 +58,7 @@
 }
 
 html {
-  font-size: 62.5%; /* TODO: Do I need this? */
+  font-size: 62.5%;
   scroll-behavior: smooth;
 }
 
