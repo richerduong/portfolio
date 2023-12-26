@@ -549,3 +549,139 @@ body.dark-theme {
 .skills ul li img:hover {
   transform: translateY(-1rem);
 }
+
+/* ABOUT */
+.about {
+  background-color: white;
+  padding: 15rem 0;
+}
+
+@media (max-width: 1020px) {
+  .about {
+    padding: 8rem 0;
+  }
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1020px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+.text-side {
+  padding-right: 1.5rem;
+}
+
+@media (max-width: 1020px) {
+  .text-side {
+    max-width: 54rem;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .text-side {
+    padding-right: 0;
+  }
+}
+
+.text-side span {
+  -webkit-text-decoration: underline #147efb;
+          text-decoration: underline #147efb;
+}
+
+.text-side h3 {
+  font-size: 1.7rem;
+  color: #147efb;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.text-side h4 {
+  font-size: 2.5rem;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  color: #2d2e32;
+}
+
+.text-side p {
+  font-size: 1.7rem;
+  font-family: "Mulish", sans-serif;
+  color: #767676;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.img-side {
+  position: relative;
+}
+
+.img-side span {
+  width: 19rem;
+  height: 19rem;
+  position: absolute;
+  background-color: white;
+  bottom: -33px;
+  right: 33px;
+  border-radius: 50%;
+}
+@media (max-width: 1020px) {
+  .img-side span {
+    width: 17rem;
+    height: 17rem;
+    bottom: -3px;
+    right: 190px;
+  }
+}
+@media (max-width: 880px) {
+  .img-side span {
+    bottom: -3px;
+    right: 100px;
+  }
+}
+@media (max-width: 750px) {
+  .img-side span {
+    display: none;
+  }
+}
+.img-side span img {
+  width: 19rem;
+  animation: rotate 9s linear infinite;
+}
+@media (max-width: 1020px) {
+  .img-side span img {
+    width: 17rem;
+  }
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.img-side__main-img {
+  width: 41rem;
+  height: 35rem;
+  border-radius: 1.7rem;
+}
+@media (max-width: 1020px) {
+  .img-side__main-img {
+    margin-bottom: 3.5rem;
+  }
+}
+@media (max-width: 460px) {
+  .img-side__main-img {
+    width: 90%;
+    height: auto;
+  }
+}
