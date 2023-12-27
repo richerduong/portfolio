@@ -6,7 +6,7 @@ const navMenu = document.getElementById('nav-menu'), // Get element with ID 'nav
 /* Validate if constant exists */
 if(navToggle){  // Check if navToggle exists
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('show-menu') // Add show-menu class when clicked
+        navMenu.classList.add('open-menu') // Add show-menu class when clicked
     })
 }
 
@@ -14,7 +14,7 @@ if(navToggle){  // Check if navToggle exists
 /* Validate if constant exists */
 if(navClose){
     navClose.addEventListener('click', () => {
-        navMenu.classList.remove('show-menu')
+        navMenu.classList.remove('open-menu')
     })
 }
 
