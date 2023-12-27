@@ -6,7 +6,7 @@ const navMenu = document.getElementById('nav-menu'), // Get element with ID 'nav
 /* Validate if constant exists */
 if(navToggle){  // Check if navToggle exists
     navToggle.addEventListener('click', () => {
-        navMenu.classList.add('open-menu') // Add show-menu class when clicked
+        navMenu.classList.add('open-menu') // Add open-menu class when clicked
     })
 }
 
@@ -24,7 +24,7 @@ const navLink = document.querySelectorAll('.nav__link') // Selects all elements 
 // Define function names linkAction
 const linkAction = () => {
     const navMenu = document.getElementById('nav-menu')
-    navMenu.classList.remove('show-menu') // This hides the navigation menu
+    navMenu.classList.remove('open-menu') // This hides the navigation menu
 }
 navLink.forEach(n => n.addEventListener('click', linkAction)) // Loop over each element in navLink NodeList, then the linkAction will be called on click events
 
