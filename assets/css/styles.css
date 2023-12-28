@@ -3,8 +3,6 @@
 
 /* VARIABLES CSS */
 :root {
-  --header-height: 3rem;
-
   /* Used Colors */
   --white-color: #FFFFFF;
 
@@ -100,14 +98,9 @@ img {
 }
 
 /* THEME */
-.nav-theme {
-  display: flex;
-  align-items: center;
-  column-gap: 1rem;
-}
 
 .change-theme {
-  font-size: 1.25rem;
+  /* font-size: 1.25rem; */
   color: var(--title-color);
   cursor: pointer;
   transition: color .3s;
@@ -179,7 +172,7 @@ body.dark-theme {
   background-color: #8e8e8e;
 }
 
-/* UPDATED NAV */
+/* HEADER/NAVIGATION */
 .mobile-menu {
   font-size: 2.3rem;
   cursor: pointer;
@@ -252,13 +245,13 @@ nav {
   padding: 25px 40px 25px 50px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   background-color: var(--white-color);
   top: 0;
   left: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
   z-index: var(--z-fixed);
-  align-items: center;
 }
 @media (max-width: 400px) {
   nav {
@@ -1073,25 +1066,14 @@ footer h3 {
 
 /* BREAKPOINTS */
 @media screen and (min-width: 1150px) {
-  .nav {
-    height: calc(var(--header-height) + 2rem);
-    column-gap: 4rem;
-  }
-
   .nav__close,
-  .nav__toggle,
-  .nav__title,
-  .nav__name {
+  .nav__toggle {
     display: none;
   }
 
   .nav__list {
     flex-direction: row;
     column-gap: 4rem;
-  }
-
-  .nav__menu {
-    margin-left: auto;
   }
 
   .nav__link {
