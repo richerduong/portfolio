@@ -17,52 +17,66 @@
    </head>
    <body>
       <!-- HEADER -->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <h3 class="nav__logo-name">Richer Duong</h3>
-            </a>
+      <nav>
+         <h3 class="logo">Richer Duong</h3>
 
-            <div class="nav__menu" id="nav-menu">
-               <span class="nav__title">Menu</span>
+         <ul>
+            <li>
+               <a href="#home">Home</a>
+            </li>
 
-               <h3 class="nav__name">Richer</h3>
+            <li>
+               <a href="#about">About</a>
+            </li>
 
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link active-link">Home</a>
-                  </li>
+            <li>
+               <a href="#projects">Projects</a>
+            </li>
 
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">About</a>
-                  </li>
+            <li>
+               <a href="#contact">Contact</a>
+            </li>
 
-                  <li class="nav__item">
-                     <a href="#projects" class="nav__link">Projects</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link nav__link-button">Contact</a>
-                  </li>
-               </ul>
-
-               <!-- Close button -->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
+            <li>
+               <div class="nav-theme">
+                  <i class="ri-moon-line change-theme" id="theme-button"></i>
                </div>
-            </div>
+            </li>
 
-            <div class="nav-theme">
-               <!-- Theme button -->
-               <i class="ri-moon-line change-theme" id="theme-button"></i>
+            <li>
+               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu" id="nav-toggle">
+                  <path d="M4 6l16 0"></path>
+                  <path d="M4 12l16 0"></path>
+                  <path d="M4 18l16 0"></path>
+               </svg>
+            </li>
+         </ul>
+      </nav>
 
-               <!-- Toggle button -->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
+      <!-- MOBILE NAV -->
+      <div class="mobile-nav closed-menu" id="nav-menu">
+         <span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tabler-icon tabler-icon-x" id="nav-close">
+               <path d="M18 6l-12 12"></path>
+               <path d="M6 6l12 12"></path>
+            </svg>
+         </span>
+         
+         <ul>
+            <li>
+               <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li>
+               <a href="#about" class="nav__link">About</a>
+            </li>
+               <li>
+                  <a href="#projects" class="nav__link">Projects</a>
+               </li>
+            <li>
+               <a href="#contact" class="nav__link">Contact</a>
+            </li>
+         </ul>
+      </div>
 
       <!-- MAIN -->
       <main class="main">
