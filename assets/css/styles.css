@@ -3,51 +3,11 @@
 
 /* VARIABLES */
 :root {
-  /* Used Colors */
   --main-bg-color: #FFFFFF;
   --secondary-bg-color: #F9F9F9;
   --accent-color: #147EFB;
   --main-text-color: #2D2E32;
   --secondary-text-color: #767676;
-
-  /* Colors */
-  --black-color: hsl(0, 0%, 0%);
-  --black-color-light: hsl(0, 0%, 40%);
-  --text-color: hsl(0, 0%, 35%);
-  --text-color-light: hsl(0, 0%, 64%);
-  --container-color: hsl(0, 0%, 83%);
-
-  /* Font and typography */
-  --body-font: "Poppins", sans-serif;
-  --biggest-font-size: 2.5rem;
-  --h1-font-size: 1.75rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 17px;
-  --normal-font-size: 17px;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-
-  /* Font weight */
-  --font-regular: 400;
-  --font-medium: 500;
-  --font-semi-bold: 600;
-  --font-bold: 700;
-
-  /* Z Index */
-  --z-fixed: 100;
-}
-
-/* Responsive typography */
-@media screen and (min-width: 1150px) {
-  :root {
-    --biggest-font-size: 4.5rem;
-    --h1-font-size: 3rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1.0625rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
 }
 
 /* BASE CSS */
@@ -64,7 +24,7 @@ html {
 
 body {
   background-color: var(--body-color);
-  font-family: var(--body-font);
+  font-family: "Poppins", sans-serif;
   color: var(--text-color);
   position: relative;
   transition: background-color .4s; /* For dark mode */
@@ -72,7 +32,7 @@ body {
 
 h1, h2, h3, h4 {
   color: var(--title-color);
-  font-weight: var(--font-bold);
+  font-weight: 700;
 }
 
 a {
@@ -108,8 +68,13 @@ img {
 }
 
 /* Variables Dark Theme */
+/* TODO: Update colors */
 body.dark-theme {
-
+  --main-bg-color: #FFFFFF;
+  --secondary-bg-color: #F9F9F9;
+  --accent-color: #147EFB;
+  --main-text-color: #2D2E32;
+  --secondary-text-color: #767676;
 }
 
 /* Dark theme styles */
@@ -246,7 +211,7 @@ nav {
   top: 0;
   left: 0;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
-  z-index: var(--z-fixed);
+  z-index: 100;
 }
 @media (max-width: 400px) {
   nav {
@@ -424,51 +389,10 @@ nav ul a:hover {
   color: var(--accent-color);
 }
 
-.home-text img {
-  position: absolute;
-  width: 6rem;
-  height: 6rem;
-  top: 8.7rem;
-  right: 13rem;
-}
-
-@media (max-width: 900px) {
-  .home-text img {
-    right: 3rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .home-text img {
-    top: 6.4rem;
-    right: 4rem;
-    width: 4.5rem;
-    height: 4.5rem;
-  }
-}
-
-@media (max-width: 400px) {
-  .home-text img {
-    right: 3rem;
-  }
-}
-
-@media (max-width: 380px) {
-  .home-text img {
-    right: 3rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .home-text img {
-    right: 1.7rem;
-  }
-}
-
 .home-img {
   width: 35rem;
   height: 35rem;
-  border: 3px solid var(--main-text-color);
+  border-radius: 1.7rem;
 }
 
 .skills {
@@ -512,7 +436,7 @@ nav ul a:hover {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
 }
 
 @media (max-width: 900px) {
@@ -522,7 +446,7 @@ nav ul a:hover {
 }
 
 .skills ul li img {
-  width: 11rem;
+  width: 7rem;
   height: 5rem;
   transition: all ease-in-out 0.3s;
 }
@@ -542,7 +466,7 @@ nav ul a:hover {
 }
 
 .home__scroll-box {
-  background-color: var(--black-color);
+  background-color: black;
   color: var(--main-bg-color);
   width: 36px;
   height: 36px;
@@ -1073,7 +997,6 @@ footer h3 {
 
   .nav__link {
     color: var(--main-text-color);
-    font-size: var(--normal-font-size);
   }
 
   .nav__link:hover {
