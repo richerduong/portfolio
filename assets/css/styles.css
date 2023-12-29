@@ -466,8 +466,9 @@ nav ul a:hover {
 }
 
 .home__scroll-box {
-  background-color: black;
-  color: var(--main-bg-color);
+  margin-top: 3rem;
+  background-color: var(--secondary-bg-color);
+  color: var(--main-text-color);
   width: 36px;
   height: 36px;
   display: grid;
