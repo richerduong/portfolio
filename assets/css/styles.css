@@ -413,7 +413,7 @@ nav ul a:hover {
 }
 
 .skills p {
-  margin-right: 7rem;
+  margin-right: 3rem;
   padding-right: 2rem;
   border-right: 2px solid rgba(45, 46, 50, 0.5);
   font-family: "Mulish", sans-serif;
@@ -459,6 +459,11 @@ nav ul a:hover {
   display: block;
   width: max-content;
   margin: 0 auto;
+  position: absolute;
+  bottom: 1rem; /* Distance from the bottom of the .home section */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Adjust horizontal centering based on its own width */
+  text-decoration: none;
 }
 
 .home__scroll-text {
@@ -481,6 +486,7 @@ nav ul a:hover {
 
 .home__scroll-box i {
   animation: scroll-down 3s infinite;
+  font-size: 3rem;
 }
 
 /* Animate scroll icon */
