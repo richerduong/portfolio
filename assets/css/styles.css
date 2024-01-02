@@ -722,7 +722,7 @@ nav ul a:hover {
   align-items: center;
   justify-content: center;
   width: 53rem;
-  height: 31rem;
+  height: auto;
   border-radius: 1.7rem;
   background-color: rgba(118, 118, 118, 0.2);
   overflow: hidden;
