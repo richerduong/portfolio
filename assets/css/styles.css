@@ -696,6 +696,7 @@ nav ul a:hover {
   border-radius: 1.7rem;
 }
 .projects-grid .pro__1 {
+  align-items: center;
   height: 40rem;
   flex-direction: row;
   padding: 2rem;
@@ -717,8 +718,11 @@ nav ul a:hover {
   }
 }
 .projects-grid .pro__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 53rem;
-  height: auto;
+  height: 31rem;
   border-radius: 1.7rem;
   background-color: rgba(118, 118, 118, 0.2);
   overflow: hidden;
