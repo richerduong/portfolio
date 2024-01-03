@@ -70,11 +70,11 @@ img {
 /* Variables Dark Theme */
 /* TODO: Update colors */
 body.dark-theme {
-  --main-bg-color: #FFFFFF;
-  --secondary-bg-color: #F9F9F9;
+  --main-bg-color: #1a1a1a;
+  --secondary-bg-color: #121212;
   --accent-color: #147EFB;
-  --main-text-color: #2D2E32;
-  --secondary-text-color: #767676;
+  --main-text-color: #E1E1E6;
+  --secondary-text-color: #a8a8b3;
 }
 
 /* Dark theme styles */
