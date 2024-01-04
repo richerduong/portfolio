@@ -8,6 +8,9 @@
   --accent-color: #147EFB;
   --main-text-color: #2D2E32;
   --secondary-text-color: #767676;
+  --date-text-color: #161414c5;
+
+  --box-shadow-1: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* BASE CSS */
@@ -15,6 +18,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition: background-color 0.4s ease 0s;
 }
 
 html {
@@ -68,13 +72,15 @@ img {
 }
 
 /* Variables Dark Theme */
-/* TODO: Update colors */
 body.dark-theme {
   --main-bg-color: #1a1a1a;
   --secondary-bg-color: #121212;
   --accent-color: #147EFB;
   --main-text-color: #E1E1E6;
   --secondary-text-color: #a8a8b3;
+  --date-text-color: #c5c5c5c5;
+
+  --box-shadow-1: 0px 0px 10px rgba(255, 255, 255, 0.05);
 }
 
 /* Dark theme styles */
@@ -189,7 +195,7 @@ body.dark-theme {
   list-style: none;
 }
 .mobile-nav ul a {
-  color: black;
+  color: var(--main-text-color);
   text-decoration: none;
   font-weight: 500;
 }
@@ -229,10 +235,20 @@ nav ul a {
   transition: all 0.3s;
   font-weight: 600;
 }
+
 @media (max-width: 900px) {
   nav ul a {
     display: none;
   }
+  .change-theme {
+    font-size: 2.2rem;
+  }
+  nav ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
 }
 nav ul a:hover {
   color: var(--accent-color);
@@ -243,23 +259,15 @@ nav ul a:hover {
   color: var(--main-text-color);
 }
 
-/* Show menu */
-/* .show-menu {
-  top: 0;
-} */
-
-/* Active link */
-/* .active-link {
-  color: var(--white-color);
+#nav-toggle,
+#nav-close {
+  color: var(--main-text-color);
 }
 
-.active-link::after {
-  width: 25%;
-} */
-
-/* .main {
-  overflow: hidden;
-} */
+#nav-toggle:hover,
+#nav-close:hover {
+  color: var(--accent-color);
+}
 
 /* HOME */
 .home {
@@ -349,7 +357,7 @@ nav ul a:hover {
 .home-text p {
   font-size: 1.8rem;
   font-weight: 500;
-  color: #555555;
+  color: var(--secondary-text-color);
   font-family: "Mulish", sans-serif;
   line-height: 1.6;
 }
@@ -724,7 +732,6 @@ nav ul a:hover {
   width: 53rem;
   height: auto;
   border-radius: 1.7rem;
-  background-color: #fcf5e8;
   overflow: hidden;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
@@ -785,12 +792,13 @@ nav ul a:hover {
   gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
+  
 }
 .stack p {
-  color: black !important;
+  color: var(--main-text-color) !important;
   font-weight: 600 !important;
   background-color: var(--main-bg-color);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--box-shadow-1);
   padding: 1rem 1.3rem;
   font-family: "Mulish", sans-serif !important;
 }
@@ -837,7 +845,7 @@ nav ul a:hover {
 
 .date-class {
   font-size: 1.4rem;
-  color: rgba(22, 20, 20, 0.7725490196);
+  color: var(--date-text-color);
   margin-left: 0.2rem;
 }
 
