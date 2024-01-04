@@ -753,9 +753,10 @@ nav ul a:hover {
 @media (max-width: 1020px) {
   .projects-grid .pro__text {
     margin: 0 auto;
+    width: 40rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   .projects-grid .pro__text {
     width: 100%;
   }
