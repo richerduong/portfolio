@@ -28,14 +28,6 @@ const linkAction = () => {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction)) // Loop over each element in navLink NodeList, then the linkAction will be called on click events
 
-/* Shadow Header */
-// const shadowHeader = () => {
-//     const header = document.getElementById('header')
-//     this.scrollY >= 50 ? header.classList.add('shadow-header')
-//                        : header.classList.remove('shadow-header')
-// }
-// window.addEventListener('scroll', shadowHeader)
-
 /* Show Scroll Up Button */
 const scrollUp = () => {
     const scrollUp = document.getElementById('scroll-up')
@@ -76,7 +68,7 @@ const iconTheme = 'ri-sun-line'
 const selectedTheme = localStorage.getItem('selected-theme')
 const selectedIcon = localStorage.getItem('selected-icon')
 
-// We obtain the current theme that the interface has by validating the dark-theme class
+// Obtain the current theme that the interface has by validating the dark-theme class
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light'
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
