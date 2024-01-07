@@ -786,6 +786,7 @@ nav ul a:hover {
 
 .stack {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
   margin-top: 1rem;
@@ -797,11 +798,6 @@ nav ul a:hover {
   box-shadow: var(--box-shadow-1);
   padding: 1rem 1.3rem;
   font-family: "Mulish", sans-serif !important;
-}
-@media (max-width: 1100px) {
-  .stack {
-    flex-wrap: wrap;
-  }
 }
 
 .links {
