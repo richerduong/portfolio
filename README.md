@@ -1,5 +1,5 @@
 <h2 align="center">
-Richer Duong's Portfolio Website 💻
+  My Portfolio Website 💻
 </h2> 
 
 <p align="center">
@@ -21,6 +21,6 @@ This site is designed to showcase my journey as a Software Engineer, featuring m
 - **Modern Technologies**: Built with HTML5, CSS3, and JavaScript.
 - **Portfolio Projects**: Detailed case studies of my most significant work.
 
-Visit the live site to see my work in action: [richerduong.com](https://richerduong.com)
+Visit the live site to see my work in action: [richerduong.com](https://richerduong.com) <br><br>
 
 *Created by Richer Duong*
