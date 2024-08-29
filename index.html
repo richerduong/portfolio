@@ -18,39 +18,45 @@
    <body>
       <!-- HEADER -->
       <nav>
-         <h3 class="logo">Richer Duong</h3>
+         <div class="nav-container">
+            <h3 class="logo">Richer Duong</h3>
 
-         <ul>
-            <li>
-               <a href="#home">Home</a>
-            </li>
+            <ul>
+               <li>
+                  <a href="#home">Home</a>
+               </li>
 
-            <li>
-               <a href="#about">About</a>
-            </li>
+               <li>
+                  <a href="#about">About</a>
+               </li>
 
-            <li>
-               <a href="#projects">Projects</a>
-            </li>
+               <li>
+                  <a href="#experience">Experience</a>
+               </li>
 
-            <li>
-               <a href="#contact">Contact</a>
-            </li>
+               <li>
+                  <a href="#projects">Projects</a>
+               </li>
 
-            <li>
-               <div class="nav-theme">
-                  <i class="ri-moon-line change-theme" id="theme-button"></i>
-               </div>
-            </li>
+               <li>
+                  <a href="#contact">Contact</a>
+               </li>
 
-            <li>
-               <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu" id="nav-toggle">
-                  <path d="M4 6l16 0"></path>
-                  <path d="M4 12l16 0"></path>
-                  <path d="M4 18l16 0"></path>
-               </svg>
-            </li>
-         </ul>
+               <li>
+                  <div class="nav-theme">
+                     <i class="ri-moon-line change-theme" id="theme-button"></i>
+                  </div>
+               </li>
+
+               <li>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="mobile-menu" id="nav-toggle">
+                     <path d="M4 6l16 0"></path>
+                     <path d="M4 12l16 0"></path>
+                     <path d="M4 18l16 0"></path>
+                  </svg>
+               </li>
+            </ul>
+         </div>
       </nav>
 
       <!-- MOBILE NAV -->
@@ -69,9 +75,12 @@
             <li>
                <a href="#about" class="nav__link">About</a>
             </li>
-               <li>
-                  <a href="#projects" class="nav__link">Projects</a>
-               </li>
+            <li>
+               <a href="#experience">Experience</a>
+            </li>
+            <li>
+               <a href="#projects" class="nav__link">Projects</a>
+            </li>
             <li>
                <a href="#contact" class="nav__link">Contact</a>
             </li>
@@ -94,11 +103,11 @@
                         <p>
                            Driven Software Engineer based in Houston, Texas. 📍
                            <br>
-                           I have a great interest in full-stack development, artificial intelligence, and human-computer interactions.
+                           I'm passionate about full-stack development, data engineering, and the transformative potential of machine learning and artificial intelligence.
                         </p>
    
                         <span>
-                           <a href="https://www.linkedin.com/in/duong-richer/" target="_blank">
+                           <a href="https://www.linkedin.com/in/richerduong/" target="_blank">
                               <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="35" height="35" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
                            </a>
       
@@ -179,8 +188,132 @@
                      </h4>
 
                      <p>
-                        I am pursuing a <b>Bachelor of Science</b> in <b>Computer Science</b>, alongside a minor in <b>Mathematics</b>, at the <b>University of Houston</b>. I actively integrate theoretical knowledge with practical applications, particularly in software engineering. My passion for technological innovation fuels my commitment to developing cutting-edge solutions. This rigorous academic training, paired with my proactive learning and problem-solving approach, endows me with a unique skill set that's well-suited for navigating the dynamic challenges of the tech industry.
+                        I am pursuing a <b>Bachelor of Science</b> in <b>Computer Science</b>, alongside a minor in <b>Mathematics</b>, at the <b>University of Houston</b>. I am a <b>Software Engineer at Pinterest</b> and a <b>Co-Founder of Resumes.fyi</b>, a startup focused on helping applicants build standout resumes. Outside of work, I stay creative and balanced through fitness and continuous learning. I'm always eager to tackle challenging problems and contribute to projects that have a meaningful impact.
                      </p>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!-- EXPERIENCE -->
+          <section class="experience" id="experience">
+            <div class="container">
+               <div class="experience-content">
+                  <p>Experience</p>
+
+                  <h3>Where I've Worked. 💻</h3>
+
+                  <div class="experiences-grid">
+                     <div class="pro pro__1 undefined">
+                        <div class="pro__img">
+                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                              <img src="assets/img/pinterest.gif" alt="Pinterest">
+                           <!-- </a> -->
+                        </div>
+
+                        <div class="pro__text">
+                           <h3>
+                              Pinterest
+                              <span class="date-class">(Sep 2024 - Present)</span>
+                              📌
+                           </h3>
+
+                           <p>
+                              <b>Software Engineer</b> on the Real-Time Analytics Team. Building scalable, real-time data pipelines and analytics tools to help teams make data-driven decisions.
+                           </p>
+
+                           <div class="stack">
+                              <p>Python</p>
+                              <P>C++</P>
+                              <p>SQL</p>
+                              <p>Apache Kafka</p>
+                              <p>AWS</p>
+                              <p>Docker</p>
+                              <p>Kubernetes</p>
+                           </div>
+
+                           <!-- <div class="links">
+                              <a href="https://github.com/richerduong/wealth-wise" target="_blank" class="experiences__link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
+                              </a>
+                              <a href="" target="_blank" class="experiences__link">
+                                 <i class="ri-arrow-right-up-line"></i> Live Demo
+                              </a>
+                           </div> -->
+                        </div>
+                     </div>
+                     <div class="pro pro__1 reversed-proj">
+                        <div class="pro__img">
+                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                              <img src="assets/img/hp.gif" alt="HP">
+                           <!-- </a> -->
+                        </div>
+
+                        <div class="pro__text">
+                           <h3>
+                              HP
+                              <span class="date-class">(May 2024 - Aug 2024)</span>
+                              🖨
+                           </h3>
+
+                           <p>
+                              <b>Data Engineering Intern</b> on the PSPS & DataOS Team. Developed a data pipeline and ETL process to create a consolidated product to support teams in DataOS.
+                           </p>
+
+                           <div class="stack">
+                              <p>PySpark</p>
+                              <p>SQL</p>
+                              <p>Delta Lake</p>
+                              <p>Databricks</p>
+                              <p>Looker</p>
+                           </div>
+
+                           <!-- <div class="links">
+                              <a href="https://github.com/richerduong/pebbles-goes-to-penguin-prison" target="_blank" class="projects__link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
+                              </a>
+                              <a href="" target="_blank" class="projects__link">
+                                 <i class="ri-arrow-right-up-line"></i> Live Demo
+                              </a>
+                           </div> -->
+                        </div>
+                     </div>
+                     <div class="pro pro__1 undefined">
+                        <div class="pro__img">
+                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                              <img src="assets/img/nasa.gif" alt="NASA">
+                           <!-- </a> -->
+                        </div>
+
+                        <div class="pro__text">
+                           <h3>
+                              NASA
+                              <span class="date-class">(Feb 2024 - May 2024)</span>
+                              🚀
+                           </h3>
+
+                           <p>
+                              <b>Software Engineering Intern</b> on the EVA Team. Revamped a React application for EVA procedures by implementing new features, refactoring backend logic, and improving the user interface.
+                           </p>
+
+                           <div class="stack">
+                              <p>React</p>
+                              <P>TypeScript</P>
+                              <p>Express.js</p>
+                              <p>Jest</p>
+                              <p>Docker</p>
+                           </div>
+
+                           <!-- <div class="links">
+                              <a href="https://github.com/richerduong/wealth-wise" target="_blank" class="experiences__link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
+                              </a>
+                              <a href="" target="_blank" class="experiences__link">
+                                 <i class="ri-arrow-right-up-line"></i> Live Demo
+                              </a>
+                           </div> -->
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
@@ -192,48 +325,83 @@
                <div class="project-content">
                   <p>Projects</p>
 
-                  <h3>A Journey Through My Professional Projects. 🚀</h3>
+                  <h3>Some of My Personal Projects. 📁</h3>
 
                   <div class="projects-grid">
                      <div class="pro pro__1 undefined">
                         <div class="pro__img">
                            <!-- <a target="_blank" href="" rel="noreferrer"> -->
-                              <img src="assets/img/wealth-wise.png" alt="website">
+                              <img src="assets/img/resumesfyi.png" alt="Resumes.fyi">
                            <!-- </a> -->
                         </div>
 
                         <div class="pro__text">
                            <h3>
-                              Wealth Wise
-                              <span class="date-class">(Dec. 2023)</span>
+                              Resumes.fyi
+                              <!-- <span class="date-class">(Apr 2024 - Present)</span> -->
+                              📄
+                           </h3>
+
+                           <p>
+                              <b>Co-Founder</b> of a startup focused on helping applicants build standout resumes. We provide a platform for users to receive inspiration from resumes that have passed screening at top tech companies.
+                           </p>
+
+                           <div class="stack">
+                              <p>React</p>
+                              <p>Next.js</p>
+                              <p>TypeScript</p>
+                              <p>Redis</p>
+                              <p>Tailwind CSS</p>
+                           </div>
+
+                           <div class="links">
+                              <!-- <a href="https://github.com/richerduong/wealth-wise" target="_blank" class="projects__link">
+                                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
+                              </a> -->
+                              <a href="https://resumes.fyi/" target="_blank" class="projects__link">
+                                 <i class="ri-arrow-right-up-line"></i> Website
+                              </a>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="pro pro__1 reversed-proj">
+                        <div class="pro__img">
+                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                              <img src="assets/img/financeflow-ai.png" alt="FinanceFlow AI">
+                           <!-- </a> -->
+                        </div>
+
+                        <div class="pro__text">
+                           <h3>
+                              FinanceFlow AI
+                              <!-- <span class="date-class">(Dec. 2023)</span> -->
                               📈
                            </h3>
 
                            <p>
-                              Track and manage your finances with Wealth Wise, a comprehensive financial tracker app built on the MERN stack. Monitor your wealth, set budgets, and make wise money decisions with ease.
+                              FinanceFlow AI is an advanced financial analytics platform designed to provide real-time insights and predictive analysis for personal and corporate finance management.
                            </p>
 
                            <div class="stack">
-                              <p>JavaScript</p>
-                              <p>MongoDB</p>
-                              <p>CSS</p>
-                              <p>Express.js</p>
-                              <p>React</p>
+                              <p>TypeScript</p>
+                              <p>Redux</p>
                               <p>Node.js</p>
+                              <p>Express.js</p>
+                              <p>MongoDB</p>
                            </div>
 
                            <div class="links">
-                              <a href="https://github.com/richerduong/wealth-wise" target="_blank" class="projects__link">
+                              <a href="https://github.com/richerduong/financeflow-ai" target="_blank" class="projects__link">
                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
                               </a>
-                              <!-- <a href="" target="_blank" class="projects__link">
-                                 <i class="ri-arrow-right-up-line"></i> Live Demo
-                              </a> -->
+                              <a href="https://financeflow-ai.vercel.app/" target="_blank" class="projects__link">
+                                 <i class="ri-arrow-right-up-line"></i> Demo
+                              </a>
                            </div>
                         </div>
                      </div>
 
-                     <div class="pro pro__1 reversed-proj">
+                     <div class="pro pro__1 undefined">
                         <div class="pro__img">
                            <!-- <a target="_blank" href="" rel="noreferrer"> -->
                               <img src="assets/img/pebbles-goes-to-penguin-prison.png" alt="website">
@@ -242,13 +410,13 @@
 
                         <div class="pro__text">
                            <h3>
-                              Pebbles in Prison
-                              <span class="date-class">(Nov. 2023)</span>
+                              Pebbles in Penguin Prison
+                              <!-- <span class="date-class">(Nov. 2023)</span> -->
                               🐧
                            </h3>
 
                            <p>
-                              Pebbles Goes to Penguin Prison is a handcrafted top-down 2D roguelike dungeon-crawler. Join Pebbles' quest for escape, outwitting guards & bosses in a dynamic, treacherous prison. Built with Godot Engine, it's a tale of mischief, strategy & resilience.
+                              Explore a handcrafted, top-down 2D roguelike dungeon-crawler where you join Pebbles on a daring quest to escape a treacherous prison. Outsmart guards, battle bosses, and navigate dynamic challenges in a story of strategy and resilience—all built using the Godot Engine.
                            </p>
 
                            <div class="stack">
@@ -266,11 +434,11 @@
                         </div>
                      </div>
 
-                     <div class="pro pro__1 undefined">
+                     <!-- <div class="pro pro__1 undefined">
                         <div class="pro__img">
-                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                           <a target="_blank" href="" rel="noreferrer">
                               <img src="assets/img/cloud-catcher.png" alt="website">
-                           <!-- </a> -->
+                           </a>
                         </div>
 
                         <div class="pro__text">
@@ -294,18 +462,18 @@
                               <a href="https://github.com/richerduong/cloud-catcher" target="_blank" class="projects__link">
                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
                               </a>
-                              <!-- <a href="" target="_blank" class="projects__link">
+                              <a href="" target="_blank" class="projects__link">
                                  <i class="ri-arrow-right-up-line"></i> Live Demo
-                              </a> -->
+                              </a>
                            </div>
                         </div>
-                     </div>
+                     </div> -->
 
-                     <div class="pro pro__1 reversed-proj">
+                     <!-- <div class="pro pro__1 reversed-proj">
                         <div class="pro__img" style="background-color: #FBF3E3;">
-                           <!-- <a target="_blank" href="" rel="noreferrer"> -->
+                           <a target="_blank" href="" rel="noreferrer">
                               <img src="assets/img/uni-meet.png" alt="website">
-                           <!-- </a> -->
+                           </a>
                         </div>
 
                         <div class="pro__text">
@@ -330,13 +498,12 @@
                               <a href="https://github.com/richerduong/uni-meet" target="_blank" class="projects__link">
                                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" /></svg> Code
                               </a>
-                              <!-- <a href="" target="_blank" class="projects__link">
+                              <a href="" target="_blank" class="projects__link">
                                  <i class="ri-arrow-right-up-line"></i> Live Demo
-                              </a> -->
+                              </a>
                            </div>
                         </div>
-                     </div>
-
+                     </div> -->
                   </div>
                </div>
             </div>
@@ -359,7 +526,7 @@
 
                         <div class="contact__info">
                            <h3>LinkedIn</h3>
-                           <a href="https://www.linkedin.com/in/duong-richer/" target="_blank">duong-richer</a>
+                           <a href="https://www.linkedin.com/in/richerduong/" target="_blank">richerduong</a>
                         </div>
                      </div>
 
@@ -396,10 +563,10 @@
       <footer>
          <div class="container">
             <div class="footer">
-               <h3>Copyright © 2023. All rights reserved by Richer Duong.</h3>
+               <h3>Copyright © 2024. All rights reserved by Richer Duong.</h3>
 
                <div class="footer__socials">
-                  <a aria-label="linkedin" href="https://www.linkedin.com/in/duong-richer/" target="_blank" rel="noreferrer">
+                  <a aria-label="linkedin" href="https://www.linkedin.com/in/richerduong/" target="_blank" rel="noreferrer">
                      <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-linkedin" width="30" height="30" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z" /><path d="M8 11l0 5" /><path d="M8 8l0 .01" /><path d="M12 16l0 -5" /><path d="M16 16v-3a2 2 0 0 0 -4 0" /></svg>
                   </a>
 

@@ -219,6 +219,14 @@ nav {
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.09);
   z-index: 100;
 }
+.nav-container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 990px;
+}
 @media (max-width: 400px) {
   nav {
     padding: 25px 30px 25px 30px;
@@ -274,7 +282,7 @@ nav ul a:hover {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100vh;
+  height: 1000px;
   background-color: var(--secondary-bg-color);
   position: relative;
 }
@@ -652,9 +660,214 @@ nav ul a:hover {
   }
 }
 
+/* EXPERIENCE */
+.experience {
+  background-color: var(--secondary-bg-color);
+  padding: 15rem 0;
+}
+@media (max-width: 1020px) {
+  .experience {
+    padding: 8rem 0;
+  }
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 600px) {
+  .experience-content {
+    text-align: center;
+  }
+}
+.experience-content p {
+  color: var(--accent-color);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.experience-content h3 {
+  font-size: 2.5rem;
+  color: var(--main-text-color);
+  margin-bottom: 6rem;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto;
+  width: 100%;
+  height: auto;
+  gap: 5rem;
+}
+.experiences-grid .pro {
+  display: flex;
+  background-color: var(--main-bg-color);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 1.7rem;
+}
+.experiences-grid .pro__1 {
+  align-items: center;
+  height: auto;
+  flex-direction: row;
+  padding: 2rem;
+  gap: 8rem;
+}
+@media (max-width: 1020px) {
+  .experiences-grid .pro__1 {
+    height: auto;
+    flex-direction: column !important;
+    gap: 3rem;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .experiences-grid .pro__1 {
+    width: 100%;
+    height: auto;
+  }
+}
+.experiences-grid .pro__img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 53rem;
+  height: auto;
+  border-radius: 1.7rem;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 650px) {
+  .experiences-grid .pro__img {
+    width: 100%;
+  }
+}
+.experiences-grid .pro__img img {
+  width: 100%;
+  height: auto;
+}
+.experiences-grid .pro__text {
+  display: flex;
+  width: 30rem;
+  height: auto;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+@media (max-width: 1020px) {
+  .experiences-grid .pro__text {
+    margin: 0 auto;
+    width: 40rem;
+  }
+}
+@media (max-width: 500px) {
+  .experiences-grid .pro__text {
+    width: 100%;
+  }
+}
+.experiences-grid .pro__text img {
+  width: 7rem;
+  position: absolute;
+  top: -2px;
+  right: -19px;
+}
+.experiences-grid .pro__text h3 {
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--main-text-color);
+  margin-bottom: 2rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.2rem;
+}
+.experiences-grid .pro__text p {
+  font-size: 1.7rem;
+  color: var(--secondary-text-color);
+  text-align: center;
+  text-transform: none;
+  font-weight: 500;
+}
+
+.stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.stack p {
+  color: var(--main-text-color) !important;
+  font-weight: 600 !important;
+  background-color: var(--main-bg-color);
+  box-shadow: var(--box-shadow-1);
+  padding: 1rem 1.3rem;
+  font-family: "Mulish", sans-serif !important;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  gap: 1rem;
+  align-items: center;
+}
+.links a {
+  font-size: 1.7rem;
+  color: var(--main-text-color);
+  font-weight: 500;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.links a i {
+  font-size: 2.8rem;
+}
+.links a .link-icon {
+  font-size: 2rem !important;
+}
+.links a img {
+  width: 3.5rem;
+}
+.links a:hover {
+  color: var(--accent-color);
+  transition: all 0.3s;
+}
+
+.reversed-proj {
+  flex-direction: row-reverse !important;
+}
+
+@media (max-width: 460px) {
+  .container {
+    padding: 0 1.7rem;
+    margin: 0 0;
+  }
+}
+
+.date-class {
+  font-size: 1.4rem;
+  color: var(--date-text-color);
+  margin-left: 0.2rem;
+}
+
+.experience {
+  background-color: var(--secondary-bg-color);
+  padding: 15rem 0;
+}
+@media (max-width: 1020px) {
+  .experience {
+    padding: 8rem 0;
+  }
+}
+
 /* PROJECTS */
 .project {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--main-bg-color);
   padding: 15rem 0;
 }
 @media (max-width: 1020px) {
@@ -695,7 +908,7 @@ nav ul a:hover {
 }
 .projects-grid .pro {
   display: flex;
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   border-radius: 1.7rem;
 }
@@ -794,7 +1007,7 @@ nav ul a:hover {
 .stack p {
   color: var(--main-text-color) !important;
   font-weight: 600 !important;
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   box-shadow: var(--box-shadow-1);
   padding: 1rem 1.3rem;
   font-family: "Mulish", sans-serif !important;
@@ -848,7 +1061,7 @@ nav ul a:hover {
 }
 
 .project {
-  background-color: var(--secondary-bg-color);
+  background-color: var(--main-bg-color);
   padding: 15rem 0;
 }
 @media (max-width: 1020px) {
@@ -859,7 +1072,7 @@ nav ul a:hover {
 
 /* CONTACT */
 .contact {
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   padding: 11rem 0;
 }
 @media (max-width: 1020px) {
@@ -912,7 +1125,7 @@ nav ul a:hover {
   }
 }
 .contact__icon-box span {
-  background-color: var(--main-bg-color);
+  background-color: var(--secondary-bg-color);
   width: 5rem;
   display: flex;
   align-items: center;
@@ -952,7 +1165,7 @@ footer {
 }
 footer h3 {
   font-size: 1.7rem;
-  color: var(--main-bg-color);
+  color: var(--secondary-bg-color);
 }
 
 .footer {
@@ -977,7 +1190,7 @@ footer h3 {
 }
 .footer__socials a {
   font-size: 2.3rem;
-  color: var(--main-bg-color);
+  color: var(--secondary-bg-color);
 }
 .footer__socials a:hover {
   transform: scale(1.2);
@@ -994,7 +1207,7 @@ footer h3 {
   display: inline-flex;
   padding: 4px;
   font-size: 2rem;
-  color: var(--main-bg-color);
+  color: var(--secondary-bg-color);
   z-index: 10;
   transition: bottom .4s, transform .4s, background-color .4s;
 }
